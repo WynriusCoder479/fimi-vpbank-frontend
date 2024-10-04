@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FIMI - VPBANK</title>
+	<link rel="stylesheet" href="../output.css">
+</head>
+
+<body>
+	<div class="relative flex h-full w-full items-center justify-center bg-background">
+		<div
+			class="h-[calc(100vh-10px)] grid grid-rows-[auto_1fr_auto] w-[430px] overflow-y-auto rounded-lg border-foreground/30 bg-background sm:border">
+			<!-- SECTION: Header -->
+			<section class="flex w-full items-center justify-between px-[2rem] py-8">
+				<img src="../../public/logo/vpbank.svg" alt="main-logo" width="163" height="38" class="w-[9rem]">
+			</section>
+
+			<!-- SECTION: Form -->
+			<div class="flex-1 px-[2rem]">
+				<div class="flex flex-col py-4">
+					<div class="flex flex-col gap-1.5 py-2">
+						<div class="flex items-center gap-2">
+							<img src="../../public/icon/check.png" alt="check-icon" class="w-5">
+							<p class="font-semibold">Hạn mức lên đến 100 triệu</p>
+						</div>
+						<div class="flex items-center gap-2">
+							<img src="../../public/icon/check.png" alt="check-icon" class="w-5">
+							<p class="font-semibold">Trả kết quả chỉ trong 5 phút</p>
+						</div>
+					</div>
+
+					<h3
+						class="bg-gradient-to-r from-primary to-secondary bg-clip-text pb-5 pt-4 text-center text-[1.3rem] font-bold text-transparent">
+						Đăng ký ngay, nhận thẻ liền tay
+					</h3>
+
+					<!-- SECTION: step -->
+					<section class="flex items-center space-x-[1.5px] w-full justify-center py-8">
+						<div class="p-1 bg-primary text-white size-6 flex items-center justify-center rounded-full">
+							1
+						</div>
+						<div class="w-3 h-1 bg-primary"></div>
+						<div class="p-1 bg-foreground/30 text-foreground size-6 flex items-center justify-center rounded-full">
+							2
+						</div>
+						<div class="w-3 h-1 bg-foreground/30"></div>
+						<div class="p-1 bg-foreground/30 text-black size-6 flex items-center justify-center rounded-full">
+							3
+						</div>
+						<div class="w-3 h-1 bg-foreground/30"></div>
+						<div class="p-1 bg-foreground/30 text-black size-6 flex items-center justify-center rounded-full">
+							4
+						</div>
+						<div class="w-3 h-1 bg-foreground/30"></div>
+						<div class="p-1 bg-foreground/30 text-black size-6 flex items-center justify-center rounded-full">
+							5
+						</div>
+					</section>
+					<!-- SECTION: form -->
+					<section class="h-fit w-[355px] rounded-xl flex flex-col gap-6">
+
+						<form class="flex flex-col gap-6">
+							<div class="flex flex-col space-y-4 bg-primary/50 px-2 py-4 rounded-xl">
+								<h4 class="text-foreground font-bold text-xl tracking-wide uppercase text-center">Thông tin cơ bản</h4>
+								<div class="flex flex-col gap-2 text-sm">
+									<label class="font-semibold" for="full_name">Họ và tên</label>
+									<input type="text" name="full_name" id="full_name"
+										class="border-none px-1 py-2 rounded-md bg-background focus-visible:ring-0 focus-visible:outline-none">
+								</div>
+
+								<div class="flex flex-col gap-2 text-sm">
+									<label class="font-semibold" for="phone_number">Số điện thoại</label>
+									<input type="text" name="phone_number" id="phone_number"
+										class="border-none px-1 py-2 rounded-md bg-background focus-visible:ring-0 focus-visible:outline-none">
+								</div>
+
+								<div class="flex flex-col gap-2 text-sm">
+									<label class="font-semibold" for="dob">Ngày, tháng, năm sinh</label>
+									<input type="date" name="dob" id="dob"
+										class="border-none px-1 py-2 rounded-md bg-background focus-visible:ring-0 focus-visible:outline-none">
+								</div>
+
+								<fieldset>
+									<legend class="text-sm">Giới tính</legend>
+									<div class="bg-background px-2 py-2 rounded-md flex items-center  gap-12">
+										<div class="inline-flex items-center">
+											<label class="relative flex items-center cursor-pointer" for="male">
+												<input name="gender" type="radio" value="M"
+													class="peer size-6 cursor-pointer appearance-none rounded-lg border border-foreground/30 checked:border-primary/50 transition-all"
+													id="male" checked>
+												<span
+													class="absolute bg-primary/50 size-4 rounded-md opacity-0 peer-checked:opacity-100 transition-opacity duration-200 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></span>
+											</label>
+											<label class="ml-2 text-sm cursor-pointer" for="male">
+												Nam
+											</label>
+										</div>
+										<div class="inline-flex items-center">
+											<label class="relative flex items-center cursor-pointer" for="female">
+												<input name="gender" type="radio" value="F"
+													class="peer size-6 cursor-pointer appearance-none rounded-lg border border-foreground/30 checked:border-primary/50 transition-all"
+													id="female" />
+												<span
+													class="absolute bg-primary/50 size-4 rounded-md opacity-0 peer-checked:opacity-100 transition-opacity duration-200 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></span>
+											</label>
+											<label class="ml-2 text-sm cursor-pointer" for="female">
+												Nữ
+											</label>
+										</div>
+									</div>
+								</fieldset>
+
+								<fieldset>
+									<legend class="text-sm">Tình trạng hôn nhân</legend>
+									<div class="bg-background px-2 py-2 rounded-md flex flex-col items-start  gap-2.5">
+										<div class="inline-flex items-center">
+											<label class="relative flex items-center cursor-pointer" for="single">
+												<input name="marital_status" type="radio" value="SINGLE"
+													class="peer size-6 cursor-pointer appearance-none rounded-lg border border-foreground/30 checked:border-primary/50 transition-all"
+													id="single">
+												<span
+													class="absolute bg-primary/50 size-4 rounded-md opacity-0 peer-checked:opacity-100 transition-opacity duration-200 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></span>
+											</label>
+											<label class="ml-2 text-sm cursor-pointer" for="male">
+												Độc thân
+											</label>
+										</div>
+										<div class="inline-flex items-center">
+											<label class="relative flex items-center cursor-pointer" for="married">
+												<input name="marital_status" type="radio" value="MARRIED"
+													class="peer size-6 cursor-pointer appearance-none rounded-lg border border-foreground/30 checked:border-primary/50 transition-all"
+													id="married" />
+												<span
+													class="absolute bg-primary/50 size-4 rounded-md opacity-0 peer-checked:opacity-100 transition-opacity duration-200 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></span>
+											</label>
+											<label class="ml-2 text-sm cursor-pointer" for="female">
+												Đã kết hôn
+											</label>
+										</div>
+										<div class="inline-flex items-center">
+											<label class="relative flex items-center cursor-pointer" for="disvorced">
+												<input name="marital_status" type="radio" value="DISVORCED"
+													class="peer size-6 cursor-pointer appearance-none rounded-lg border border-foreground/30 checked:border-primary/50 transition-all"
+													id="disvorced" />
+												<span
+													class="absolute bg-primary/50 size-4 rounded-md opacity-0 peer-checked:opacity-100 transition-opacity duration-200 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></span>
+											</label>
+											<label class="ml-2 text-sm cursor-pointer" for="female">
+												Đã ly hôn/Goá
+											</label>
+										</div>
+									</div>
+								</fieldset>
+							</div>
+
+							<div class="w-full flex items-center justify-center px-8 py-1">
+								<button type="submit" class="bg-primary text-white w-full p-2 rounded-md cursor-pointer">Tiếp
+									tục</button>
+							</div>
+						</form>
+
+					</section>
+				</div>
+			</div>
+
+
+			<!-- SECTION: Footer -->
+			<section class="flex flex-col">
+				<div class="flex flex-col items-center justify-center gap-y-4 bg-foreground/20 py-2">
+					<img src="../../public/logo/vpbank-brand.png" alt="sub-logo" width="332" height="119" class="w-[7rem]">
+					<div class="flex flex-col items-center justify-center gap-2">
+						<small className="text-[5px] font-semibold opacity-40">
+							89 Láng Hạ - Đống Đa - Hà Nội
+						</small>
+						<small className="text-[5px] font-semibold opacity-40">
+							Hotline: 1900 54 54 15
+						</small>
+						<small className="text-[5px] font-semibold opacity-40">
+							Email: kncn.vpbank.com.vn
+						</small>
+					</div>
+				</div>
+				<small
+					class="bg-gradient-to-r from-primary to-primary/75 py-4 text-center text-[10px] font-semibold text-white">
+					2022 VPBank - Bản quyền đã được bảo hộ
+					<br />
+					Chính sách bảo mật
+				</small>
+			</section>
+
+
+		</div>
+	</div>
+</body>
+
+</html>

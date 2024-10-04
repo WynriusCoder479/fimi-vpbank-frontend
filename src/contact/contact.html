@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FIMI - VPBANK</title>
+	<link rel="stylesheet" href="../output.css">
+</head>
+
+<body>
+	<div class="relative flex h-full w-full items-center justify-center bg-background">
+		<div
+			class="h-[calc(100vh-10px)] grid grid-rows-[auto_1fr_auto] w-[430px] overflow-y-auto rounded-lg border-foreground/30 bg-background sm:border">
+			<!-- SECTION: Header -->
+			<section class="flex w-full items-center justify-between px-[2rem] py-8">
+				<img src="../../public/logo/vpbank.svg" alt="main-logo" width="163" height="38" class="w-[9rem]">
+			</section>
+
+			<!-- SECTION: Form -->
+			<div class="flex-1 px-[2rem]">
+				<div class="flex flex-col py-4">
+
+					<div class="flex items-center gap-2 py-6">
+						<h3
+							class="flex-1 bg-gradient-to-r uppercase from-primary to-secondary bg-clip-text pb-5 pt-4 text-[1.3rem] font-bold text-transparent">
+							Thông tin người thân và địa chỉ phát thẻ
+						</h3>
+						<img src="../../public/parent.png" alt="parent">
+					</div>
+
+					<div class="w-[100%-15px] h-1 bg-gradient-to-r from-primary to-primary/60 my-6"></div>
+
+					<!-- SECTION: form -->
+					<section class="h-fit w-[355px] rounded-xl flex flex-col gap-6 justify-center">
+
+						<form class="flex flex-col gap-6">
+							<div class="flex flex-col space-y-4 bg-primary/50 px-2 py-4 rounded-xl">
+								<div class="flex flex-col gap-2 text-sm">
+									<label class="font-semibold" for="reference1_fullname">HỌ VÀ TÊN NGƯỜI THÂN CẦN LIÊN HỆ</label>
+									<input type="text" name="reference1_fullname" id="reference1_fullname"
+										class="border-none px-1 py-2 rounded-md bg-background focus-visible:ring-0 focus-visible:outline-none">
+								</div>
+
+								<div class="flex flex-col gap-2 text-sm">
+									<label class="font-semibold" for="reference1_relationship">MỐI QUAN HỆ</label>
+									<input type="text" name="reference1_relationship" id="reference1_relationship"
+										class="border-none px-1 py-2 rounded-md bg-background focus-visible:ring-0 focus-visible:outline-none">
+								</div>
+
+								<div class="flex flex-col gap-2 text-sm">
+									<label class="font-semibold" for="reference1_mobile_phone_number">SỐ ĐIỆN THOẠI</label>
+									<input type="text" name="reference1_mobile_phone_number" id="reference1_mobile_phone_number"
+										class="border-none px-1 py-2 rounded-md bg-background focus-visible:ring-0 focus-visible:outline-none">
+								</div>
+
+								<div class="flex flex-col gap-2 text-sm">
+									<label class="font-semibold" for="security_question">CÂU HỎI BẢO MẬT</label>
+									<input type="text" name="security_question" id="security_question"
+										class="border-none px-1 py-2 rounded-md bg-background focus-visible:ring-0 focus-visible:outline-none">
+								</div>
+
+								<div class="flex flex-col gap-2 text-sm">
+									<label class="font-semibold" for="security_answer">CÂU TRẢ LỜI</label>
+									<input type="text" name="security_answer" id="security_answer"
+										class="border-none px-1 py-2 rounded-md bg-background focus-visible:ring-0 focus-visible:outline-none">
+								</div>
+
+								<div class="flex flex-col gap-2 text-sm">
+									<label class="font-semibold" for="card_delivery_address">ĐỊA CHỈ NHẬN </label>
+									<textarea type="text" rows="4" name="card_delivery_address" id="card_delivery_address"
+										class="border-none px-1 py-2 resize-none rounded-md bg-background focus-visible:ring-0 focus-visible:outline-none"></textarea>
+								</div>
+
+								<p class="text-sm text-foreground/50">Vui lòng lựa chọn địa điểm giao trong trường hợp thẻ không thể
+									giao đến địa chỉ mong muốn:</p>
+
+								<div class="flex flex-col gap-2 text-sm">
+									<label class="font-semibold" for="recived-city">TỈNH/ THÀNH PHỐ CHI NHÁNH</label>
+									<select id="recived-city"
+										class="border-none px-1 py-2 rounded-md bg-background focus-visible:ring-0 focus-visible:outline-none">
+								</div>
+
+								<div class="flex flex-col gap-2 text-sm">
+									<label class="font-semibold" for="recived-city2">CHI NHÁNH ĐĂNG KÝ ĐẺ NHẬN THẺ</label>
+									<select id="recived-city2"
+										class="border-none px-1 py-2 rounded-md bg-background focus-visible:ring-0 focus-visible:outline-none">
+								</div>
+
+							</div>
+
+							<div class="w-full flex items-center justify-center px-8 py-1">
+								<button type="submit" class="bg-primary text-white w-full p-2 rounded-md cursor-pointer">Tiếp
+									tục</button>
+							</div>
+						</form>
+
+					</section>
+				</div>
+			</div>
+
+
+			<!-- SECTION: Footer -->
+			<section class="flex flex-col">
+				<div class="flex flex-col items-center justify-center gap-y-4 bg-foreground/20 py-2">
+					<img src="../../public/logo/vpbank-brand.png" alt="sub-logo" width="332" height="119" class="w-[7rem]">
+					<div class="flex flex-col items-center justify-center gap-2">
+						<small className="text-[5px] font-semibold opacity-40">
+							89 Láng Hạ - Đống Đa - Hà Nội
+						</small>
+						<small className="text-[5px] font-semibold opacity-40">
+							Hotline: 1900 54 54 15
+						</small>
+						<small className="text-[5px] font-semibold opacity-40">
+							Email: kncn.vpbank.com.vn
+						</small>
+					</div>
+				</div>
+				<small
+					class="bg-gradient-to-r from-primary to-primary/75 py-4 text-center text-[10px] font-semibold text-white">
+					2022 VPBank - Bản quyền đã được bảo hộ
+					<br />
+					Chính sách bảo mật
+				</small>
+			</section>
+
+
+		</div>
+	</div>
+</body>
+
+</html>

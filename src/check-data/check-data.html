@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FIMI - VPBANK</title>
+	<link rel="stylesheet" href="../output.css">
+</head>
+
+<body>
+	<div class="relative flex h-full w-full items-center justify-center bg-background">
+		<div
+			class="h-[calc(100vh-10px)] grid grid-rows-[auto_1fr_auto] w-[430px] overflow-y-auto rounded-lg border-foreground/30 bg-background sm:border">
+			<!-- SECTION: Header -->
+			<section class="flex w-full items-center justify-between px-[2rem] py-8">
+				<img src="../../public/logo/vpbank.svg" alt="main-logo" width="163" height="38" class="w-[9rem]">
+			</section>
+
+			<!-- SECTION: Form -->
+			<div class="flex-1 px-[2rem] flex items-center justify-center">
+				<div class="w-full flex flex-col space-y-8 items-center justify-center">
+					<h3
+						class="text-2xl uppercase text-center tracking-tighter text-balance drop-shadow-md font-bold bg-gradient-to-r from-primary to-primary/60 text-transparent bg-clip-text">
+						Đang chờ phê duyệt từ ngân hàng
+					</h3>
+					<div class="bg-primary/50 w-full p-6 rounded-xl flex items-center gap-10">
+						<p class="flex-1 text-foreground/50 text-justify">
+							Ngân hàng xử lí thông tin của bạn, quy trình xử lý thường diễn ra trong 3 phút
+							Vui lòng không đóng trình duyệt trong khoản thời gian này.
+							Còn <span class="text-primary font-bold">175s</span>
+						</p>
+						<img src="../../public/icon/list.png" alt="list" width="226" height="364" class="w-24">
+					</div>
+					<button
+						class="bg-primary p-2 w-56 rounded-lg text-white font-semibold tracking-wide shadow-md disabled:bg-neutral-200 disabled:text-foreground/50 disabled:cursor-not-allowed"
+						disabled>Tiếp
+						tục</button>
+				</div>
+			</div>
+
+
+			<!-- SECTION: Footer -->
+			<section class="flex flex-col">
+				<div class="flex flex-col items-center justify-center gap-y-4 bg-foreground/20 py-2">
+					<img src="../../public/logo/vpbank-brand.png" alt="sub-logo" width="332" height="119" class="w-[7rem]">
+					<div class="flex flex-col items-center justify-center gap-2">
+						<small className="text-[5px] font-semibold opacity-40">
+							89 Láng Hạ - Đống Đa - Hà Nội
+						</small>
+						<small className="text-[5px] font-semibold opacity-40">
+							Hotline: 1900 54 54 15
+						</small>
+						<small className="text-[5px] font-semibold opacity-40">
+							Email: kncn.vpbank.com.vn
+						</small>
+					</div>
+				</div>
+				<small
+					class="bg-gradient-to-r from-primary to-primary/75 py-4 text-center text-[10px] font-semibold text-white">
+					2022 VPBank - Bản quyền đã được bảo hộ
+					<br />
+					Chính sách bảo mật
+				</small>
+			</section>
+
+		</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FIMI - VPBANK</title>
+	<link rel="stylesheet" href="../output.css">
+</head>
+
+<body>
+	<div class="relative flex h-full w-full items-center justify-center bg-background">
+		<div
+			class="h-[calc(100vh-10px)] grid grid-rows-[auto_1fr_auto] w-[430px] overflow-y-auto rounded-lg border-foreground/30 bg-background sm:border">
+			<!-- SECTION: Header -->
+			<section class="flex w-full items-center justify-between px-[2rem] py-8">
+				<img src="../../public/logo/vpbank.svg" alt="main-logo" width="163" height="38" class="w-[9rem]">
+			</section>
+
+			<!-- SECTION: Form -->
+			<div class="flex-1 px-[2rem] py-6">
+				<div class="flex flex-col w-full items-center">
+					<div class="flex flex-col gap-2 py-4 w-full">
+						<h3
+							class="text-2xl uppercase text-center font-bold text-transparent bg-gradient-to-r from-primary to-primary/60 bg-clip-text">
+							Xác thực gương mặt
+						</h3>
+						<small class="text-center text-sm text-foreground/50 font-semibold">
+							Vui lòng chụp hình gương mặt để xác thực.
+						</small>
+					</div>
+
+					<div
+						class="cursor-pointer w-full flex flex-col gap-4 bg-neutral-300 items-center justify-center p-4 rounded-[2rem] shadow-sm">
+						<img src="../../public/face.png" alt="face" width="128" height="151" class="w-10 ">
+						<p class="text-center font-semibold text-foreground/50">Chụp gương mặt</p>
+					</div>
+
+					<button
+						class="bg-primary px-8 py-2 w-fit rounded-lg text-white tracking-wide self-center my-4 shadow-md disabled:bg-neutral-400 disabled:text-">
+						Tiếp tục
+					</button>
+				</div>
+			</div>
+
+
+			<!-- SECTION: Footer -->
+			<section class="flex flex-col">
+				<div class="flex flex-col items-center justify-center gap-y-4 bg-foreground/20 py-2">
+					<img src="../../public/logo/vpbank-brand.png" alt="sub-logo" width="332" height="119" class="w-[7rem]">
+					<div class="flex flex-col items-center justify-center gap-2">
+						<small className="text-[5px] font-semibold opacity-40">
+							89 Láng Hạ - Đống Đa - Hà Nội
+						</small>
+						<small className="text-[5px] font-semibold opacity-40">
+							Hotline: 1900 54 54 15
+						</small>
+						<small className="text-[5px] font-semibold opacity-40">
+							Email: kncn.vpbank.com.vn
+						</small>
+					</div>
+				</div>
+				<small
+					class="bg-gradient-to-r from-primary to-primary/75 py-4 text-center text-[10px] font-semibold text-white">
+					2022 VPBank - Bản quyền đã được bảo hộ
+					<br />
+					Chính sách bảo mật
+				</small>
+			</section>
+
+
+		</div>
+	</div>
+</body>
+
+</html>
